@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+body {
+  background-image: url(images/bg-desktop.svg);
+  background-color: hsl(257, 40%, 49%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.container {
+  padding: 40px;
+  align-items: center;
+  margin-left: 20px;
+}
+.head {
+  margin-top: 4vh;
+}
+.head img {
+  width: 12vw;
+}
+.box {
+  display: flex;
+  margin-top: 3rem;
+}
+#img {
+  width: 50%;
+  align-items: center;
+  align-content: center;
+}
+#img img {
+  width: 100%;
+  height: auto;
+}
+.para {
+  width: 50%;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+#head > h1 {
+  font-weight: 600;
+  font-size: 3.3rem;
+}
+#head h1,
+#para_r p {
+  color: white;
+  line-height: normal;
+}
+p {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.register {
+  margin-top: 10px;
+}
+button {
+  margin-top: 20px;
+  padding: 13px;
+  font-size: 1.2rem;
+  width: 13rem;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  color: hsl(257, 40%, 49%);
+}
+button:hover {
+  background: hsl(300, 69%, 71%);
+  color: white;
+}
+
+.icons {
+  display: flex;
+  justify-content: end;
+}
+.fa-brands {
+  color: white;
+  margin-left: 20px;
+  padding: 10px 12px;
+  border-radius: 50%;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.fa-brands:hover {
+  border: 2px solid hsl(300, 69%, 71%);
+  color: hsl(300, 69%, 71%);
+}
+
+@media screen and (max-width: 768px) {
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  #img {
+    width: 100%;
+    height: auto;
+  }
+  .para {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .icons {
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .head img {
+    width: 42vw;
+  }
+  #head > h1 {
+    font-size: 2rem;
+  }
+}
